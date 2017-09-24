@@ -1,0 +1,9 @@
+.btn{
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+.btn-transparent
+{
+  opacity: 0.5;
+}
