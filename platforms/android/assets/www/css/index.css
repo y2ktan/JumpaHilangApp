@@ -188,7 +188,9 @@ body {
 .loginBg
 {
   background: url('../img/Sign In.jpg') no-repeat;
-  background-size: 100% 100%;
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 
 .btn
