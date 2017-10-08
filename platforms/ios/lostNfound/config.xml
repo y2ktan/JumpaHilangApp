@@ -75,6 +75,10 @@
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
     </feature>
+    <feature name="FirebasePlugin">
+        <param name="ios-package" value="FirebasePlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>lostNfound</name>
     <description>
         Hello World sample application that responds to the deviceready event.

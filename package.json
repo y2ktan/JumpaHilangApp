@@ -27,7 +27,8 @@
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-statusbar": {},
             "cordova-plugin-vibration": {},
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-firebase": {}
         }
     },
     "dependencies": {
@@ -43,6 +44,7 @@
         "cordova-plugin-dialogs": "~1.2.0",
         "cordova-plugin-file": "~4.1.1",
         "cordova-plugin-file-transfer": "~1.5.0",
+        "cordova-plugin-firebase": "^0.1.24",
         "cordova-plugin-geolocation": "~2.1.0",
         "cordova-plugin-globalization": "~1.0.3",
         "cordova-plugin-inappbrowser": "~1.3.0",
