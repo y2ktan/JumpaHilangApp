@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
     Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
 
@@ -48,7 +48,7 @@
     <title>Lost and Found</title>
 </head>
 
-<body class="black-bg loginBg">
+<body class="black-bg loginBg" ng-app="HomePageApp" ng-controller="HomePageCtrl">
     <div class="app">
         <div class="site-wrapper">
           <div class="site-wrapper-inner">
@@ -63,7 +63,7 @@
                 <p class="lead">Welcome To</p>
                 <h2 class="cover-heading">Lost & Found</h2><br/>
                 <p class="lead">
-                  <a href="#" class="btn btn-secondary">SIGN IN</a>
+                  <a href="#" class="btn btn-secondary" ng-click="NavigateToLogin()">SIGN IN</a>
                 </p>
                 <p class="lead">
                   <a href="#" class="btn btn-secondary btn-transparent">VISITOR</a>

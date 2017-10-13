@@ -1,3 +1,9 @@
+var HomePageApp = angular.module('HomePageApp', []);
+HomePageApp.controller('HomePageCtrl', function ($scope) {
+    $scope.NavigateToLogin = function () {
+        window.location = "login.html";
+    };
+});
 var app = {
     // Application Constructor
     initialize: function() {

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--
     Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
 
@@ -31,8 +31,7 @@
     default-src * 'unsafe-inline';
     style-src 'self' 'unsafe-inline';
     media-src *; font-src 'self' data:;
-    "
-    />
+    " />
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -48,36 +47,36 @@
     <title>Lost and Found</title>
 </head>
 
-<body class="black-bg loginBg" ng-app="HomePageApp" ng-controller="HomePageCtrl">
+<body class="black-bg loginBg">
     <div class="app">
         <div class="site-wrapper">
-          <div class="site-wrapper-inner">
-            <div class="cover-container">
-              <div class="masthead clearfix">
-                <div class="inner">
-                  <h3 class="masthead-brand"></h3>
-                </div>
-              </div>
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand"></h3>
+                        </div>
+                    </div>
 
-              <div class="inner cover">
-                <p class="lead">Welcome To</p>
-                <h2 class="cover-heading">Lost & Found</h2><br/>
-                <p class="lead">
-                  <a href="#" class="btn btn-secondary" ng-click="NavigateToLogin()">SIGN IN</a>
-                </p>
-                <p class="lead">
-                  <a href="#" class="btn btn-secondary btn-transparent">VISITOR</a>
-                </p>
-              </div>
+                    <div class="inner cover">
+                        <p class="lead">Welcome To</p>
+                        <h2 class="cover-heading">Lost & Found</h2><br />
+                        <p class="lead">
+                            <a href="#" class="btn btn-secondary">Login</a>
+                        </p>
+                        <p class="lead">
+                            <a href="#" class="btn btn-secondary btn-transparent">Register</a>
+                        </p>
+                    </div>
 
-              <div class="mastfoot">
-                <div class="inner">
-                  <center><p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p></center>
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <center><p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p></center>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div>
+            </div>
         </div>
-      </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
