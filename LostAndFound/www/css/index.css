@@ -135,8 +135,8 @@ body {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
-  position: fixed;
+  color: rgba(0,0,0,1);
+  /*position: fixed;*/
   bottom: 0;
   width: 100%;
 }
@@ -150,7 +150,17 @@ body {
 .masthead {
     /* top: 1000px; */
     margin-top: 10%;
+    height:295px
   }
+}
+
+@media (max-height: 450px) {
+
+    .masthead {
+        /* top: 1000px; */
+        /*margin-top: 10%;*/
+        height: 295px
+    }
 }
 
 /*
@@ -199,6 +209,10 @@ body {
     }
 }
 
+.app
+{
+    background-color: white
+}
 
 .loginBg
 {
@@ -226,5 +240,11 @@ body {
   font-family: 'Century Gothic';
   width: 200px;
   font-size: 14px;
+}
+
+#visitor {
+    border-color: #97c5e6;
+    color: #2C8ACF;
+    border-width:medium;
 }
 
