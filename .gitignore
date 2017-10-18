@@ -1,3 +1,5 @@
 .vs/
 platforms/
 LostAndFound/bld/
+LostAndFound/bin/
+debug.log
