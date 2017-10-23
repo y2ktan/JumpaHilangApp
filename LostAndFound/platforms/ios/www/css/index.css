@@ -145,22 +145,19 @@ body {
 /*
  * Affix and center
  */
- @media (min-height: 450px){
+@media (min-height: 451px) {
+
+    .masthead {
+        /* top: 1000px; */
+        margin-top: 10%;
+        height: 295px
+    }
+}
 
 .masthead {
     /* top: 1000px; */
     margin-top: 10%;
-    height:295px
-  }
-}
-
-@media (max-height: 450px) {
-
-    .masthead {
-        /* top: 1000px; */
-        /*margin-top: 10%;*/
-        height: 295px
-    }
+    height: 230px
 }
 
 /*
@@ -178,9 +175,14 @@ body {
     float: none;
 }
 
+.footer
+{
+    font-size:10px
+}
+
 @media (min-width: 40em) {
-  /* Pull out the header and footer */
-  .masthead {
+    /* Pull out the header and footer */
+    .masthead {
     top: 0;
   }
   .mastfoot {
