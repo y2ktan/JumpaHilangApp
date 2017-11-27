@@ -4,3 +4,5 @@ LostAndFound/bld/
 LostAndFound/bin/
 LostAndFound/node_modules
 debug.log
+platforms/
+simulation/
