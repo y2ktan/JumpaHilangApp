@@ -6,3 +6,4 @@ LostAndFound/node_modules
 debug.log
 platforms/
 simulation/
+LostAndFound/*.jsproj

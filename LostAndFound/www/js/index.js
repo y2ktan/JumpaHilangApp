@@ -3,6 +3,10 @@ HomePageApp.controller('HomePageCtrl', function ($scope) {
     $scope.NavigateToLogin = function () {
         window.location = "login.html";
     };
+
+    $scope.NavigateToVisitor = function () {
+        window.location = "visitor.html";
+    };
 });
 var app = {
     // Application Constructor
