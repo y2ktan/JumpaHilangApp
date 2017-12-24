@@ -31,8 +31,7 @@
     default-src * 'unsafe-inline';
     style-src 'self' 'unsafe-inline';
     media-src *; font-src 'self' data:;
-    "
-    />
+    " />
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -51,50 +50,51 @@
 <body class="white-bg" ng-app="HomePageApp" ng-controller="HomePageCtrl">
     <div class="app">
         <div class="site-wrapper">
-          <div class="site-wrapper-inner">
-            <div class="cover-container">
-              <div class="masthead clearfix">
-                <div class="inner">
-                    <div class="class="masthead-brand"">
-                        <!--<div><img style='width:auto;height:500px;' src="img/Welcome-bg2.jpg"  /></div>-->
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <div class="class=" masthead-brand"">
+                                <!--<div><img style='width:auto;height:500px;' src="img/Welcome-bg2.jpg"  /></div>-->
+                            </div>
+
+                        </div>
                     </div>
-                    
-                </div>
-              </div>
 
-              <div class="inner cover">
-                <p class="lead"></p>
-                <!--<h2 class="cover-heading">
-                    <img style='width:100px;height:auto; margin-right:10px;' src="img/search-icon.jpg" />
-                    <span>Lost &amp;<br /> Found</span><br/>
-                  
-                    <span class="iwt">
-                        <span>Lost & Found.</span>
-                        <i class="pull-left"><img src="img/search-icon.jpg" class="img-responsive"/></i>
-                    </span>
-                  
-                    </h2>
-                <br/>-->
-                
-                <p class="lead">
-                  <a href="#" class="btn btn-danger" ng-click="NavigateToLogin()">SIGN IN</a>
-                </p>
-                <p class="lead">
-                  <a href="#" class="btn btn-secondary btn-transparent" id="visitor" ng-click="NavigateToVisitor()">VISITOR</a>
-                </p>
-                  <p class="lead footer">
-                 Copyright 	&#9400; 2017 Ressphere</p>
-                  </p>
-              </div>
+                    <div class="inner cover">
+                        <p class="lead"></p>
+                        <!--<h2 class="cover-heading">
+                            <img style='width:100px;height:auto; margin-right:10px;' src="img/search-icon.jpg" />
+                            <span>Lost &amp;<br /> Found</span><br/>
 
-              <div class="mastfoot">
-                <div class="inner">
-                  <!--<center><p>Copyright 	&#9400; 2017 Ressphere</p></center>-->
+                            <span class="iwt">
+                                <span>Lost & Found.</span>
+                                <i class="pull-left"><img src="img/search-icon.jpg" class="img-responsive"/></i>
+                            </span>
+
+                            </h2>
+                        <br/>-->
+
+                        <p class="lead">
+                            <a href="#" class="btn btn-danger" ng-click="NavigateToLogin()">SIGN IN</a>
+                        </p>
+                        <p class="lead">
+                            <a href="#" class="btn btn-secondary btn-transparent" id="visitor" ng-click="NavigateToVisitor()">VISITOR</a>
+                        </p>
+                        <p class="lead footer">
+                            Copyright 	&#9400; 2017 Ressphere
+                        </p>
+                        </p>
+                    </div>
+
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <!--<center><p>Copyright 	&#9400; 2017 Ressphere</p></center>-->
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div>
+            </div>
         </div>
-      </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

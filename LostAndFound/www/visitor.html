@@ -1,9 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Lost and Found</title>
 </head>
-<body>
-    <div>Content goes here.</div>
+<body class="white-bg" ng-app="HomePageApp" ng-controller="HomePageCtrl">
+    <div ng-include="'templates/header.html'"></div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 </html>
