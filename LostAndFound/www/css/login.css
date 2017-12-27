@@ -68,6 +68,17 @@ body {
     margin-left: auto;
 }
 
+.main-container {
+    display: table;
+    width: 100%;
+    height: 500px; /* For at least Firefox */
+    min-height: 100%;
+    background: url(../img/signin.jpg) no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
 /* Padding for spacing */
 .inner {
     padding: 2rem;
@@ -255,4 +266,84 @@ body {
 
 .footer {
     font-size: 10px
+}
+
+
+/****************************************/
+/* Contain of the login item */
+.login_debug_location {
+/* 
+    background-color: green;
+    opacity: .4;
+*/
+}
+
+#login_username {
+    width: 200px;
+    height: 22px;
+    margin: 178px 0px 0px 90px;
+
+}
+
+#login_password {
+    width: 200px;
+    height: 17px;
+    margin: 28px 0px 0px 90px;
+}
+
+#login_remember_me {
+    width: 15px;
+    height: 15px;
+    margin: 14px 0px 0px 90px;
+    float: left;
+}
+
+#login_forget_password {
+    width: 74px;
+    height: 15px;
+    margin: 14px 90px 0px 0px;
+    float: right;
+
+}
+
+#login_sign_in {
+    width: 200px;
+    height: 28px;
+    margin: 36px 0px 0px 90px;
+}
+
+#login_facebook {
+    width: 97px;
+    height: 26px;
+    margin: 34px 0px 0px 90px;
+    float: left;
+    
+}
+
+#login_twitter {
+    width: 97px;
+    height: 25px;
+    margin: 34px 88px 0px 0px;
+    float: right;
+    /*background-color: red;*/
+}
+
+#login_cancel {
+    width: 200px;
+    height: 25px;
+    margin: 70px 0px 0px 90px;
+}
+
+#login_signup {
+    width: 50px;
+    height: 15px;
+    margin: 5px 0px 0px 210px;
+}
+
+#login_error_display {
+    width: 200px;
+    height: 25px;
+    margin: 5px 0px 0px 90px;
+    color: red;
+    text-align: center;
 }

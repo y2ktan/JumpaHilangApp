@@ -4,4 +4,7 @@
     <DebuggerFlavor>SimulateNexus7</DebuggerFlavor>
     <AndroidEmulatorID>AndroidEmulator;Google Emulator - Phone</AndroidEmulatorID>
   </PropertyGroup>
+  <PropertyGroup>
+    <ToolsVersionPromptShown>2.3</ToolsVersionPromptShown>
+  </PropertyGroup>
 </Project>
