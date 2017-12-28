@@ -1,7 +1,13 @@
 {
-    "name": "LostAndFound",
-    "version": "1.0.0",
-    "private": true,
-    "dependencies": {
+  "name": "LostAndFound",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "cordova-plugin-screen-orientation": "^2.0.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-screen-orientation": {}
     }
+  }
 }
