@@ -1,0 +1,41 @@
+{
+  "test": {
+    "user_name": "test",
+    "password": "123",
+    "first_name": "test1",
+    "last_name": "example",
+    "id_passport": "123-456-60",
+    "email": "test@yahoo.com",
+    "street": "some street",
+    "city": "some city",
+    "post_code": "some code",
+    "country": "Soem contry",
+    "gentle": "unknown",
+    "claim": [
+      {
+        "item": "Iphone 1",
+        "found_when": "dd/mm/yyyy hh"
+      }
+    ]
+  },
+  "cmtan": {
+    "user_name": "cmtan",
+    "password": "123",
+    "first_name": "Chun Mun",
+    "last_name": "Tan",
+    "id_passport": "S8076606H",
+    "email": "info@ressphere.com",
+    "street": "16 Sandilands Road",
+    "city": "SINGAPORE",
+    "post_code": "546080",
+    "country": "SINGAPORE",
+    "gentle": "male",
+    "claim": [
+      {
+        "item": "Iphone 5",
+        "found_when": "25/01/2018 2pm"
+      }
+    ]
+  }
+
+}
