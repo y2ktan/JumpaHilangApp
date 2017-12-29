@@ -47,22 +47,22 @@
     <title>Lost and Found</title>
 </head>
 
-<body class="black-bg loginBg">
+<body class="black-bg loginBg" ng-app="BaseApp" ng-controller="LoginPageCtrl">
     <div class="app">
         <div class="site-wrapper">
             <div class="site-wrapper-inner">
                 <div class="cover-container">
                     <div class="main-container">
-                        <div id="login_username" class="login_debug_location"><input type="text" class="general_input_font general_input_str_box" value="USERNAME" onClick="this.setSelectionRange(0, this.value.length)"/></div>
-                        <div id="login_password" class="login_debug_location general_input_font"><input type="text" class="general_input_font general_input_str_box" value="PASSWORD" onClick="this.setSelectionRange(0, this.value.length)"/></div>
-                        <div id="login_remember_me" class="login_debug_location" onclick="document.getElementById('login_error_display').innerHTML = 'Remember me features not yet supported'"></div>
-                        <div id="login_forget_password" class="login_debug_location"onclick="document.getElementById('login_error_display').innerHTML = 'Forget password features not yet supported'"></div>
-                        <div id="login_sign_in" class="login_debug_location"></div>
-                        <div id="login_facebook" class="login_debug_location" onclick="document.getElementById('login_error_display').innerHTML = 'Facebook features not yet supported'"></div>
-                        <div id="login_twitter" class="login_debug_location" onclick="document.getElementById('login_error_display').innerHTML = 'Twitter features not yet supported'"></div>
+                        <div id="login_username" class="login_debug_location"><input type="text" ng-model="ag_login.username" class="general_input_font general_input_str_box" onClick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="login_password" class="login_debug_location general_input_font"><input type="text" ng-model="ag_login.password" class="general_input_font general_input_str_box" onClick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="login_remember_me" class="login_debug_location" ng-click="ag_login.error_display ='Remember me features not yet supported'"></div>
+                        <div id="login_forget_password" class="login_debug_location" ng-click="ag_login.error_display ='Forget password features not yet supported'"></div>
+                        <div id="login_sign_in" class="login_debug_location" ng-click="proceed_signin()"></div>
+                        <div id="login_facebook" class="login_debug_location" ng-click="ag_login.error_display ='Facebook features not yet supported'"></div>
+                        <div id="login_twitter" class="login_debug_location" ng-click="ag_login.error_display ='Twitter features not yet supported'"></div>
                         <div id="login_cancel" class="login_debug_location" onclick="window.location = 'index.html'"></div>
                         <div id="login_signup" class="login_debug_location" onclick="window.location = 'signup.html'"></div>
-                        <div id="login_error_display" class="login_debug_location general_input_font"></div>
+                        <div id="login_error_display" class="login_debug_location general_input_font">{{ag_login.error_display}}</div>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,8 @@
     <script type="text/javascript" src="js/popper.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+
+    <script type="text/javascript" src="js/login.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
