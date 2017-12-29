@@ -53,14 +53,14 @@
             <div class="site-wrapper-inner">
                 <div class="cover-container">
                     <div class="main-container">
-                        <div id="signup_username" class="signup_debug_location"><input type="text" ng-model="ag_signup.username" class="general_input_font general_input_str_box" ng-click="this.setSelectionRange(0, this.value.length)" /></div>
-                        <div id="signup_email" class="signup_debug_location"><input type="text" ng-model="ag_signup.email" class="general_input_font general_input_str_box" ng-click="this.setSelectionRange(0, this.value.length)" /></div>
-                        <div id="signup_phone" class="signup_debug_location"><input type="text" ng-model="ag_signup.phone" class="general_input_font general_input_str_box" ng-click="this.setSelectionRange(0, this.value.length)" /></div>
-                        <div id="signup_password1" class="signup_debug_location"><input type="text" ng-model="ag_signup.password1" class="general_input_font general_input_str_box" ng-click="this.setSelectionRange(0, this.value.length)" /></div>
-                        <div id="signup_password2" class="signup_debug_location"><input type="text" ng-model="ag_signup.password2" class="general_input_font general_input_str_box" ng-click="this.setSelectionRange(0, this.value.length)" /></div>
-                        <div id="signup_signup_btn" class="signup_debug_location" ></div>
-                        <div id="signup_cancel_btn" class="signup_debug_location" ng-click="window.location = 'login.html'"></div>
-                        <div id="signup_read_chk" class="signup_debug_location" ng-click="if (ag_signup.read_chk_display === '') {ag_signup.read_chk_display = 'x'} else {ag_signup.read_chk_display = ''}">{{ag_signup.read_chk_display}}</div>
+                        <div id="signup_username" class="signup_debug_location"><input type="text" ng-model="ag_signup.username" class="general_input_font general_input_str_box" onclick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="signup_email" class="signup_debug_location"><input type="text" ng-model="ag_signup.email" class="general_input_font general_input_str_box" onclick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="signup_phone" class="signup_debug_location"><input type="text" ng-model="ag_signup.phone" class="general_input_font general_input_str_box" onclick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="signup_password1" class="signup_debug_location"><input type="text" ng-model="ag_signup.password1" class="general_input_font general_input_str_box" onclick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="signup_password2" class="signup_debug_location"><input type="text" ng-model="ag_signup.password2" class="general_input_font general_input_str_box" onclick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="signup_signup_btn" class="signup_debug_location" ng-click="proceed_signup()"></div>
+                        <div id="signup_cancel_btn" class="signup_debug_location" onclick="window.location = 'login.html'"></div>
+                        <div id="signup_read_chk" class="signup_debug_location"><input type="checkbox" ng-model="ag_signup.term_chk"/></div>
                         <div id="signup_term_condition" class="signup_debug_location" ng-click="ag_signup.error_display ='Please contact us !!'"></div>
                         <div id="signup_error_display" class="signup_debug_location general_input_font">{{ag_signup.error_display}}</div>
                     </div>

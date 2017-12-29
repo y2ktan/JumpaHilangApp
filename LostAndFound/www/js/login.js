@@ -29,6 +29,7 @@ BaseApp.controller('LoginPageCtrl', function ($scope) {
                     "last_name": "example",
                     "id_passport": "123-456-60",
                     "email": "test@yahoo.com",
+                    "phone": "+6012-444555666",
                     "street": "some street",
                     "city": "some city",
                     "post_code": "some code",
@@ -48,6 +49,7 @@ BaseApp.controller('LoginPageCtrl', function ($scope) {
                     "last_name": "Tan",
                     "id_passport": "S8076606H",
                     "email": "info@ressphere.com",
+                    "phone": "+6012-111222333",
                     "street": "16 Sandilands Road",
                     "city": "SINGAPORE",
                     "post_code": "546080",
@@ -71,7 +73,7 @@ BaseApp.controller('LoginPageCtrl', function ($scope) {
 
         // Retreive stored user data
         var user_data_set_obj = JSON.parse(localStorage.getItem('user_data_set'));
-        //console.log(user_data_obj);
+        //console.log(user_data_set_obj);
 
         // Check the username and password
         var login_status = "false";
@@ -82,7 +84,7 @@ BaseApp.controller('LoginPageCtrl', function ($scope) {
             if ($scope.ag_login.password === user_data_obj["password"])
             {
                 sessionStorage.setItem("user_name", $scope.ag_login.username);
-                sessionStorage.setItem("user_data", user_data_obj);
+                sessionStorage.setItem("user_data", JSON.stringify(user_data_obj));
                 login_status = "true";
                 $scope.ag_login.error_display = "Login ~~~~";
 

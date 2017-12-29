@@ -53,15 +53,15 @@
             <div class="site-wrapper-inner">
                 <div class="cover-container">
                     <div class="main-container">
-                        <div id="login_username" class="login_debug_location"><input type="text" ng-model="ag_login.username" class="general_input_font general_input_str_box" ng-click="this.setSelectionRange(0, this.value.length)" /></div>
-                        <div id="login_password" class="login_debug_location general_input_font"><input type="text" ng-model="ag_login.password" class="general_input_font general_input_str_box" ng-click="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="login_username" class="login_debug_location"><input type="text" ng-model="ag_login.username" class="general_input_font general_input_str_box" onclick="this.setSelectionRange(0, this.value.length)" /></div>
+                        <div id="login_password" class="login_debug_location general_input_font"><input type="text" ng-model="ag_login.password" class="general_input_font general_input_str_box" onclick="this.setSelectionRange(0, this.value.length)" /></div>
                         <div id="login_remember_me" class="login_debug_location" ng-click="ag_login.error_display ='Remember me features not yet supported'"></div>
                         <div id="login_forget_password" class="login_debug_location" ng-click="ag_login.error_display ='Forget password features not yet supported'"></div>
                         <div id="login_sign_in" class="login_debug_location" ng-click="proceed_signin()"></div>
                         <div id="login_facebook" class="login_debug_location" ng-click="ag_login.error_display ='Facebook features not yet supported'"></div>
                         <div id="login_twitter" class="login_debug_location" ng-click="ag_login.error_display ='Twitter features not yet supported'"></div>
-                        <div id="login_cancel" class="login_debug_location" ng-click="window.location = 'index.html'"></div>
-                        <div id="login_signup" class="login_debug_location" ng-click="window.location = 'signup.html'"></div>
+                        <div id="login_cancel" class="login_debug_location" onclick="window.location = 'index.html'"></div>
+                        <div id="login_signup" class="login_debug_location" onclick="window.location = 'signup.html'"></div>
                         <div id="login_error_display" class="login_debug_location general_input_font">{{ag_login.error_display}}</div>
                     </div>
                 </div>
