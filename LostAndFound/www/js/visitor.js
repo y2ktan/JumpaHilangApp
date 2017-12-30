@@ -5,7 +5,10 @@
 //    };
 //});
 BaseApp.controller('VisitorPageCtrl', function ($scope) {
-    
+    // Initial value
+    $scope.ag_header = {
+        title: "Lost & Found"
+    };
 });
 var app = {
     // Application Constructor

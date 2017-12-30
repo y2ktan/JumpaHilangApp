@@ -108,7 +108,7 @@ a.article, a.article:hover {
 ----------------------------------------------------- */
 #content {
     padding: 0px;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     transition: all 0.3s;
     width: 100%;
 }

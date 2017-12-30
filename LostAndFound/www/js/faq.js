@@ -2,9 +2,14 @@ var BaseApp = angular.module('BaseApp', []);
 
 BaseApp.controller('FAQPageCtrl', function ($scope) {
     // Initial value
-    $scope.ag_activation_page = {
-        code: "PLEASE ENTER ACTIVATION CODE"
+    $scope.ag_header = {
+        title: "FAQ"
     };
+    $scope.ag_faq = {
+        
+    };
+
+
     
 });
 
