@@ -13,6 +13,10 @@
     background: #363435;
     color: #fdfdfd;
     transition: all 0.3s;
+
+    background: url(../img/sidebar.jpg) no-repeat;
+    background-size: contain;
+    background-position:left top;
 }
 
     #sidebar.active {
@@ -124,4 +128,53 @@ a.article, a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+
+/****************************************/
+/* Contain of the login item */
+.sidebar__debug_location {
+    /*
+    background-color: green;
+    opacity: .4;
+    */
+}
+
+#sidebar__profile_btn {
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+}
+
+#sidebar__vsitor_btn {
+    width: 100px;
+    height: 82px;
+    margin: 0px 0px 0px 0px;
+}
+
+#sidebar__message_btn {
+    width: 100px;
+    height: 82px;
+    margin: 0px 0px 0px 0px;
+}
+#sidebar__contact_us_btn {
+    width: 100px;
+    height: 82px;
+    margin: 0px 0px 0px 0px;
+}
+#sidebar__faq_btn {
+    width: 100px;
+    height: 82px;
+    margin: 0px 0px 0px 0px;
+}
+#sidebar__how_to_btn {
+    width: 100px;
+    height: 90px;
+    margin: 18px 0px 0px 0px;
+}
+
+#sidebar__logout_btn {
+    width: 100px;
+    height: 90px;
+    margin: 60px 0px 0px 0px;
 }
