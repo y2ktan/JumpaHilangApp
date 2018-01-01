@@ -1,15 +1,13 @@
-﻿var BaseApp = angular.module('BaseApp', []);
-//BaseApp.service("baseServices", function () {
-//    this.ToggleSideBar = function () {
-//        $('#sidebar').toggleClass('active'); alert("active");
-//    };
-//});
-BaseApp.controller('VisitorPageCtrl', function ($scope) {
+var BaseApp = angular.module('BaseApp', []);
+
+BaseApp.controller('ActivationPageCtrl', function ($scope) {
     // Initial value
-    $scope.ag_header = {
-        title: "Lost & Found"
+    $scope.ag_activation_page = {
+        code: "PLEASE ENTER ACTIVATION CODE"
     };
+    
 });
+
 var app = {
     // Application Constructor
     initialize: function () {

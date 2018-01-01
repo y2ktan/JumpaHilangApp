@@ -1,0 +1,34 @@
+﻿.wrapper_main_container {
+    display: table;
+    width: 100%;
+    height: 500px; /* For at least Firefox */
+}
+
+
+
+#faq__container {
+    width: 100%;
+    height: 600px;
+    margin-top: -20px;
+    background: url(../img/faq_mid.png) repeat;
+    background-position: left top;
+    background-size: auto auto;
+    background-color: green;
+}
+#faq__container_left {
+    width: 270px;
+    height: 350px;
+    background: url(../img/faq_left.png) no-repeat;
+    background-position: left top;
+    background-size: contain contain;
+    float: left;
+}
+
+#faq__container_right {
+    width: 120px;
+    height: 570px;
+    background: url(../img/faq_right.png) no-repeat;
+    background-position: right top;
+    background-size: contain contain;
+    float: right;
+}

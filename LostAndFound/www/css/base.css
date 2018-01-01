@@ -20,3 +20,16 @@
     text-align: center;
     color: #F1BCBE;
 }
+
+/* This is to consolidate font type and size*/
+.general_input_font {
+    color: black;
+    text-align: left;
+    font-size:12px;
+}
+
+.general_input_str_box {
+    opacity: .5;
+    border: hidden;
+    width:100%
+}

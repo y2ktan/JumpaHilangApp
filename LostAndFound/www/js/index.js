@@ -26,6 +26,11 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        if(screen.lockOrientation) {  
+           screen.lockOrientation('portrait');  
+        } else {  
+           screen.orientation.lock('portrait');  
+        }  
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

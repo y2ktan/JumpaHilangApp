@@ -1,34 +1,4 @@
-﻿.black-bg {
-    background-color: black;
-}
-
-.white-bg {
-    background-color: white;
-}
-
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-    color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: .05rem solid #fff;
-}
-
-
-/*
+﻿/*
  * Base structure
  */
 
@@ -73,7 +43,7 @@ body {
     width: 604px;
     height: 500px; /* For at least Firefox */
     min-height: 100%;
-    background: url(../img/signin.jpg) no-repeat;
+    background: url(../img/signup.jpg) no-repeat;
     background-size: auto;
     background-position: center center;
     background-size: auto 100%;
@@ -271,77 +241,73 @@ body {
 
 /****************************************/
 /* Contain of the login item */
-.login_debug_location {
-/*
+.signup_debug_location {
+    /*
     background-color: green;
     opacity: .4;
-*/
+    */
 }
 
-#login_username {
+#signup_username {
     width: 200px;
     height: 22px;
-    margin: 178px 0px 0px 205px;
-
+    margin: 150px 0px 0px 205px;
 }
 
-#login_password {
+#signup_email {
     width: 200px;
     height: 17px;
-    margin: 28px 0px 0px 205px;
+    margin: 15px 0px 0px 205px;
 }
 
-#login_remember_me {
-    width: 15px;
-    height: 15px;
-    margin: 14px 0px 0px 205px;
-    float: left;
-}
-
-#login_forget_password {
-    width: 74px;
-    height: 15px;
-    margin: 14px 204px 0px 0px;
-    float: right;
-}
-
-#login_sign_in {
+#signup_phone {
     width: 200px;
-    height: 28px;
-    margin: 36px 0px 0px 205px;
+    height: 17px;
+    margin: 20px 0px 0px 205px;
 }
 
-#login_facebook {
-    width: 97px;
-    height: 26px;
-    margin: 34px 0px 0px 205px;
-    float: left;
+#signup_password1 {
+    width: 200px;
+    height: 17px;
+    margin: 20px 0px 0px 205px;
 }
 
-#login_twitter {
-    width: 97px;
-    height: 25px;
-    margin: 34px 204px 0px 0px;
-    float: right;
-    /*background-color: red;*/
+#signup_password2 {
+    width: 200px;
+    height: 17px;
+    margin: 20px 0px 0px 205px;
 }
 
-#login_cancel {
+#signup_signup_btn {
     width: 200px;
     height: 25px;
-    margin: 70px 0px 0px 205px;
+    margin: 25px 0px 0px 205px;
 }
 
-#login_signup {
-    width: 50px;
-    height: 15px;
-    margin: 5px 0px 0px 325px;
-}
-
-#login_error_display {
+#signup_cancel_btn {
     width: 200px;
     height: 25px;
     margin: 5px 0px 0px 205px;
-    color: red;
-    text-align: center;
 }
+
+#signup_read_chk {
+    width: 20px;
+    height: 10px;
+    margin: 7px 0px 0px 193px;
+    float: left;
+}
+
+#signup_term_condition {
+    width: 80px;
+    height: 10px;
+    margin: 12px 200px 0px 0px;
+    float: right;
+}
+
+#signup_error_display {
+    width: 200px;
+    height: 25px;
+    margin: 30px 0px 0px 205px;
+    color: red;
+}
+
