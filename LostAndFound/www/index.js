@@ -1,13 +1,36 @@
-var BaseApp = angular.module('BaseApp', []);
-BaseApp.controller('HomePageCtrl', function ($scope) {
-    $scope.NavigateToLogin = function () {
-        window.location = "login.html";
-    };
-
-    $scope.NavigateToVisitor = function () {
-        window.location = "visitor.html";
-    };
+var BaseApp = angular.module('BaseApp', ["ngRoute"]);
+BaseApp.config(function ($routeProvider) {
+    $routeProvider.when("/faq", {
+        controller: "FAQPageCtrl",
+        templateUrl: "views/faq.html"
+    })
+    .when("/", {
+        controller: "HomePageCtrl",
+        templateUrl: "views/home.html"
+     })
+     .when("/activation", {
+        controller: "ActivationPageCtrl",
+        templateUrl: "views/activation_page.html"
+     })
+     .when("/signIn", {
+        controller: "LoginPageCtrl",
+        templateUrl: "views/login.html"
+     })
+     .when("/visitor", {
+        controller: "VisitorPageCtrl",
+        templateUrl: "views/visitor.html"
+     })
+     .when("/signUp", {
+         controller: "SignupPageCtrl",
+        templateUrl: "views/SignupPageCtrl.html"
+     })
+     .otherwise({ redirectTo: "/" });
 });
+
+
+
+
+
 var app = {
     // Application Constructor
     initialize: function() {

@@ -43,68 +43,29 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Lost and Found</title>
-</head>
 
-<body class="white-bg" ng-app="BaseApp" ng-controller="HomePageCtrl">
-    <div class="app">
-        <div class="site-wrapper">
-            <div class="site-wrapper-inner">
-                <div class="cover-container">
-                    <div class="masthead clearfix">
-                        <div class="inner">
-                            <div class="class=" masthead-brand"">
-                                <!--<div><img style='width:auto;height:500px;' src="img/Welcome-bg2.jpg"  /></div>-->
-                            </div>
 
-                        </div>
-                    </div>
-
-                    <div class="inner cover">
-                        <p class="lead"></p>
-                        <!--<h2 class="cover-heading">
-                            <img style='width:100px;height:auto; margin-right:10px;' src="img/search-icon.jpg" />
-                            <span>Lost &amp;<br /> Found</span><br/>
-
-                            <span class="iwt">
-                                <span>Lost & Found.</span>
-                                <i class="pull-left"><img src="img/search-icon.jpg" class="img-responsive"/></i>
-                            </span>
-
-                            </h2>
-                        <br/>-->
-
-                        <p class="lead">
-                            <a href="#" class="btn btn-danger" ng-click="NavigateToLogin()">SIGN IN</a>
-                        </p>
-                        <p class="lead">
-                            <a href="#" class="btn btn-secondary btn-transparent" id="visitor" ng-click="NavigateToVisitor()">VISITOR</a>
-                        </p>
-                        <p class="lead footer">
-                            Copyright 	&#9400; 2017 Ressphere
-                        </p>
-                        </p>
-                    </div>
-
-                    <div class="mastfoot">
-                        <div class="inner">
-                            <!--<center><p>Copyright 	&#9400; 2017 Ressphere</p></center>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/popper.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="js/activation_page.js"></script>
+    <script type="text/javascript" src="js/faq.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+    <script type="text/javascript" src="js/visitor.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
+    <title>Lost and Found</title>
+</head>
+
+<body class="white-bg" ng-app="BaseApp">
+    <ng-view></ng-view>
 </body>
 
 </html>

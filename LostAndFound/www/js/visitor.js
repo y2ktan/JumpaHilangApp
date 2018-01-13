@@ -1,10 +1,4 @@
-﻿var BaseApp = angular.module('BaseApp', []);
-//BaseApp.service("baseServices", function () {
-//    this.ToggleSideBar = function () {
-//        $('#sidebar').toggleClass('active'); alert("active");
-//    };
-//});
-BaseApp.controller('VisitorPageCtrl', function ($scope) {
+﻿BaseApp.controller('VisitorPageCtrl', function ($scope) {
     // Initial value
     $scope.ag_header = {
         title: "Lost & Found"
