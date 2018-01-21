@@ -15,7 +15,7 @@
     transition: all 0.3s;
 
     background: url(../img/sidebar.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position:left top;
     margin-left:-100px;
 }
