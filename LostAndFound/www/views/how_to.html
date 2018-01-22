@@ -32,31 +32,36 @@
 </head>
 
 <body class="black-bg loginBg" ng-app="BaseApp" ng-controller="HowToPageCtrl">
-    <div class="app" id="hot_to__wrapper">
+    <div class="app" >
         <div class="wrapper">
             <div id="faq__sidebar" ng-include="'templates/sidebar.html'"></div>
             <div class="wrapper_main_container">
                 <div id="content" ng-include="'templates/header.html'"></div>
+                <div id="hot_to__wrapper"></div>
+                <p class="" style="">
+                    <a href="#!visitor" class="btn btn-danger" style="margin-right:10px; width:150px;" ng-click="NavigateToVisitor()">Skip</a>
+                    <a href="#!how_to" class="btn btn-secondary" style="margin-left:10px; width:150px;" id="visitor">Next</a>
+                </p>
             </div>
         </div>
         <!--
-        Define button, align it. This button re-use the index.css, need to define one in how_to.css later on.     
+        Define button, align it. This button re-use the index.css, need to define one in how_to.css later on.
         -->
-        <p class="lead">
-            <a href="#" class="btn btn-secondary" style="margin:-600px 20px auto 50px; font-size:36px; vertical-align:central; border-radius: 50px; width:300px; height:80px" id="visitor" ng-click="NavigateToVisitor()">Skip</a>
-            <a href="#" class="btn btn-danger" style="margin:-600px 50px auto 20px; font-size:36px; vertical-align:central; border-radius: 50px; width:300px; height:80px;" >Next</a>
-        </p>
+        <!--style="margin:-600px 20px auto 50px; font-size:36px; vertical-align:central; border-radius: 50px; width:300px; height:80px"
+        style="margin:-600px 50px auto 20px; font-size:36px; vertical-align:central; border-radius: 50px; width:300px; height:80px;"
+            -->
     </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/popper.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
 
-        <script type="text/javascript" src="js/how_to.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+    <script type="text/javascript" src="js/faq.js"></script>
+    <script type="text/javascript" src="js/how_to.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 
 </html>
