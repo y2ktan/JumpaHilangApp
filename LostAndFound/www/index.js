@@ -4,6 +4,10 @@ BaseApp.config(function ($routeProvider) {
         controller: "FAQPageCtrl",
         templateUrl: "views/faq.html"
     })
+    $routeProvider.when("/how_to", {
+        controller: "HowToPageCtrl",
+        templateUrl: "views/how_to.html"
+    })
     .when("/", {
         controller: "HomePageCtrl",
         templateUrl: "views/home.html"
