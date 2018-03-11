@@ -36,7 +36,7 @@ BaseApp.controller('LoginPageCtrl', function ($scope) {
                 //alert(JSON.stringify(user_data_set_obj[$scope.ag_login.username]));
 
                 // Diver to user page
-                window.location = 'visitor.html'
+                window.location = '#!/visitor'
             }
             else
             {
