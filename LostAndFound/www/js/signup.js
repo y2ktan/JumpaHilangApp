@@ -75,7 +75,7 @@ BaseApp.controller('SignupPageCtrl', function ($scope) {
             $scope.ag_signup.error_display = "Proceeding signup ~~~";
 
             // Diver to activation page
-            window.location = 'activation_page.html'
+            window.location = '#!/activation'
         }
     };
 });

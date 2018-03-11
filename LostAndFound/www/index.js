@@ -26,7 +26,7 @@ BaseApp.config(function ($routeProvider) {
      })
      .when("/signUp", {
          controller: "SignupPageCtrl",
-        templateUrl: "views/SignupPageCtrl.html"
+        templateUrl: "views/signup.html"
      })
      .otherwise({ redirectTo: "/" });
 });

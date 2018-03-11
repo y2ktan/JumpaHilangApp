@@ -12,8 +12,8 @@
                     <div id="login_sign_in" class="login_debug_location" ng-click="proceed_signin()"></div>
                     <div id="login_facebook" class="login_debug_location" ng-click="ag_login.error_display ='Facebook features not yet supported'"></div>
                     <div id="login_twitter" class="login_debug_location" ng-click="ag_login.error_display ='Twitter features not yet supported'"></div>
-                    <div id="login_cancel" class="login_debug_location" onclick="window.location = 'index.html'"></div>
-                    <div id="login_signup" class="login_debug_location" onclick="window.location = 'signup.html'"></div>
+                    <a href="#/!"><div id="login_cancel" class="login_debug_location"></div></a>
+                    <a href="#!/signUp"><div id="login_signup" class="login_debug_location"></div></a>
                     <div id="login_error_display" class="login_debug_location general_input_font">{{ag_login.error_display}}</div>
                 </div>
             </div>
