@@ -44,28 +44,14 @@ body {
     text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-    display: table;
-    width: 100%;
-    height: 500px; /* For at least Firefox */
-    min-height: 100%;
-    /*background: url(../img/Welcome-bg2.jpg) no-repeat;*/
-    background-size: auto;
-    background-position: center center;
-    background-size: auto 100%;
-    /*-webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);*/
-}
-
-.site-wrapper-inner {
-    display: table-cell;
-    vertical-align: top;
-}
 
 .cover-container {
     margin-right: auto;
     margin-left: auto;
+    position: fixed;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, 0%);
 }
 
 .main-container {
@@ -77,11 +63,6 @@ body {
     background-size: auto;
     background-position: center center;
     background-size: auto 100%;
-}
-
-/* Padding for spacing */
-.inner {
-    padding: 2rem;
 }
 
 
@@ -136,14 +117,6 @@ body {
  * Cover
  */
 
-.cover {
-    padding: 0 1.5rem;
-}
-
-    .cover .btn-lg {
-        padding: .75rem 1.25rem;
-        font-weight: bold;
-    }
 
 
 /*
@@ -179,48 +152,6 @@ body {
 /*
  * Affix and center
  */
-@media (min-height: 590px) {
-
-    .masthead {
-        /* top: 1000px; */
-        margin-top: 20%;
-    }
-}
-
-.masthead-brand {
-    float: none;
-}
-
-@media (min-width: 40em) {
-    /* Pull out the header and footer */
-    .masthead {
-        top: 0;
-    }
-
-    .mastfoot {
-        /*position: fixed;*/
-        bottom: 0;
-    }
-    /* Start the vertical centering */
-    .site-wrapper-inner {
-        vertical-align: middle;
-    }
-    /* Handle the widths */
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
-}
-
-@media (min-width: 62em) {
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 42rem;
-        height: 50px
-    }
-}
 
 .app {
     background-color: white
@@ -258,10 +189,9 @@ body {
     border-width: medium;
 }
 
-#title
-{
-    font-size:10px;
-    color:black
+#title {
+    font-size: 10px;
+    color: black
 }
 
 .footer {
@@ -272,7 +202,7 @@ body {
 /****************************************/
 /* Contain of the login item */
 .login_debug_location {
-/*
+    /*
     background-color: green;
     opacity: .4;
 */
@@ -282,7 +212,6 @@ body {
     width: 200px;
     height: 22px;
     margin: 178px 0px 0px 205px;
-
 }
 
 #login_password {
